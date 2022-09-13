@@ -1,22 +1,22 @@
 ﻿// Задача 21
-// Напишите программу, которая принимает на входе координаты двух точек и нахождение расстояния между ними в 3D-пространстве.
-// А (3,6,8); В (2,1,-7), -> 15,84
-// А (7,-5, 0); В (1,-1,9) -> 11,53
+// Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
+// A (3,6,8); B (2,1,-7), -> 15.84
+// A (7,-5, 0); B (1,-1,9) -> 11.53
 
-// АВ = √(xb - xa)2 + (yb - ya)2 + (zb - za)2
+// AB = √(xb - xa)2 + (yb - ya)2 + (zb - za)2
 
-Консоль . WriteLine ( " Введите координату Х для точки А: " );
-int  xa  =  конвертировать . ToInt32 ( Консоль.ReadLine ( ) ) ;
-Консоль . WriteLine ( " Введите координату Y для точки А: " );
-int  ya  =  Преобразовать . ToInt32 ( Консоль.ReadLine ( ) ) ;
-Консоль . WriteLine ( " Введите координату Z для точки А: " );
-int  za  =  Преобразовать . ToInt32 ( Консоль.ReadLine ( ) ) ;
-Консоль . WriteLine ( " Введите координату Х для точки B: " );
-intxb  = Преобразовать . _  ToInt32 ( Консоль.ReadLine ( ) ) ; 
-Консоль . WriteLine ( " Введите координату Y для точки B: " );
-int  yb  =  Преобразовать . ToInt32 ( Консоль.ReadLine ( ) ) ;
-Консоль . WriteLine ( " Введите координату Z для точки B: " );
-int  zb  =  Преобразовать . ToInt32 ( Консоль.ReadLine ( ) ) ;
+Console.WriteLine("Введите координату Х для точки А:");
+int xa = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координату Y для точки А:");
+int ya = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координату Z для точки А:");
+int za = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координату Х для точки B:");
+int xb = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координату Y для точки B:");
+int yb = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координату Z для точки B:");
+int zb = Convert.ToInt32(Console.ReadLine());
 
-двойное  расстояние  =  математика . Sqrt (( Math.Pow (( xb- xa ) , 2 ) + Math.Pow ( ( yb - ya ) , 2 ) + Math.Pow ( ( zb - za ) , 2 ) ) );        
-Консоль . WriteLine ( $" Расстояние между точками А и В:{ расстояние : f2 } " );
+double distance = Math.Sqrt((Math.Pow((xb - xa),2) + Math.Pow((yb - ya),2) + Math.Pow((zb - za),2)));
+Console.WriteLine($"Расстояние между точками А и В: {distance:f2}");

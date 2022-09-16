@@ -32,7 +32,6 @@ int SumNumbersFrom1ToA(int a)
     }
 }
 
-
 int number = ReadNumber("Введите число:");
 int summa = SumNumbersFrom1ToA(number);
 Console.WriteLine($"Сумма элементов от 1 до A = {summa}");
